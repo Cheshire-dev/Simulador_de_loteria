@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loteria Digital</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>	
+	<div class="container">
+		<h1>Teste Loteria</h1>
+
+		<div class="entradas"> 
+			<input type="number" name="num1" id="num1" onchange="addList(value,1)">
+			<input type="number" name="num2" id="num2" onchange="addList(value,2)">
+			<input type="number" name="num3" id="num3" onchange="addList(value,3)">
+			<input type="number" name="num4" id="num4" onchange="addList(value,4)">
+			<input type="number" name="num5" id="num5" onchange="addList(value,5)">
+			<input type="number" name="num6" id="num6" onchange="addList(value,6)">
+		</div>
+		
+
+		<button type="button" name="button" onclick="verificar()">Sortear</button>
+
+		<ul id="numerosS">
+			<p id="acertos"></p>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="script.js">
+	</script>
+</body>
+</html>
